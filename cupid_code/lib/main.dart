@@ -29,7 +29,7 @@ class _ValentineHomeState extends State<ValentineHome>
   bool showBalloons = false;
   double balloonOffset = -400;
 
-  // Heartbeat control
+  
   bool heartbeatOn = false;
   late final AnimationController _beatController;
   late final Animation<double> _beatAnim;
@@ -38,7 +38,7 @@ class _ValentineHomeState extends State<ValentineHome>
   void initState() {
     super.initState();
 
-    // Heartbeat: scale up/down repeatedly
+    
     _beatController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 600),
